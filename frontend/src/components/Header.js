@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import io from "socket.io-client";
 
-const socket = io(`${process.env.REACT_APP_PUBLIC_URL}`);
+const socket = io(process.env.REACT_APP_PUBLIC_URL);
 
 const ChatHeader = () => {
   const navigate = useNavigate();

@@ -42,7 +42,6 @@ io.on("connect", (socket) => {
   });
 
   socket.on("leaveRoom", (username) => {
-    const user = userLeave(socket.id);
       io.emit(
         "message",
         formatMessage(botName, `${username} has disconnected`)
